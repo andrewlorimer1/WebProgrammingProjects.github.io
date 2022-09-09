@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Concept of Web Technology</title>
+
+    <!-- link to css style sheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Intro-->
+        <section class="intro" id="home">
+
+            <h1 class="section__title   section__title--intro" style="text-align: center; font-size:70px;">
+                <strong> Basic Concepts of Web Technology </strong>
+
+            </h1>
+        </section>
+
+    </header>
+
+    <section class="intro" id="home">
+        <p class="section__subtitle section__subtitle--intro">Made by: Andrew Lorimer </p>
+        <img src="image2.png" alt="a picture of html" class="intro__img">
+    </section>
+
+
+
+    <!-- Definitions -->
+
+    <section class="Definitions" id="Definitions" style="text-align: center;">
+
+        <div class="Definitions" style="text-decoration:underline;">
+            <h2> Definitions </h2>
+        </div>
+        <div style="text-align:left">
+            <p> <strong> 1 : Define HTMl: </strong> Html is defined as a markup language, it is used to create pages
+                displayed on the web </p>
+            <p> <strong> 2 : Define Client-server model of communications</strong> Client-server model represents
+                commmunication between two computers over a network, clients request a resource and servers provide the
+                resources. </p>
+            <p> <strong> 3 : Write down the name of different types of servers </strong>Data server, Application server, Web server, Email server, Media server and Authentication server are all examples of a server type. </p>
+            <p> <strong> 4 : Define a Web Server </strong> A web server is hardware and software that accepts incoming
+                HTTP requests. A web browser starts the communication by requesting a resource from the web server, the
+                web server then sends the resource to the web browser.</p>
+            <p> <strong> 5 : Define Data Centers </strong> A facility that provides the computational power to run
+                applications, multiple computers in the datacenter are networked together and are responsible for
+                storing and proccessing data requried to run an application. Data centers provide failover redundancy in which a failure in one server will not impact performace as there are several servers to retain a site's availability.</p>
+        </div>
+    </section>
+
+
+
+
+    <section class="Understanding" id="Understanding">
+        <div class="Understanding" style="text-decoration: underline; text-align: center;">
+            <h2> Understanding</h2>
+        </div>
+        <div style="text-align: left">
+            <p> <strong> 6: Why do we need a Uniform Resource Locator? </strong> To allow clients to request resources
+                from a server, URL is a naming mechanism so that the client knows how to communicate with the server
+            </p>
+            <p> <strong> 7: What is the difference between a static and dynamic website?</strong> A static page consists
+                of only HTML pages which are run of the client side, dynamic pages are created at run-time by a program
+                running on a web server, the pages are converted to html by the program to be sent to the client. </p>
+            <p> <strong> 8: Why do we need Domain Name System (DNS)?</strong> DNS allows for software to discover IP
+                addresses from domain names and determine what the IP address of the server is to request resources from
+                it and display a webpage. </p>
+            <p> <strong> 9: Describe in detail the process of DNS address resolution?</strong> Address resolution starts
+                with a client searching a URL in a web browser, if the site is not within the browser's memory it will
+                then communicate with a DNS server to resolve the domain. If the DNS server does not contain the IP in
+                its cache it will contact the root name server, which will return an IP of the name server. The primary
+                DNS server then contacts the .com name servers requesting for an IP of name server for target domain.
+                After this the primary DNS server now can contact the DNS server for the domain name and retrieve an IP
+                address to be passed back to a clients DNS resolver. The client can not contact the IP address of the
+                the domain name and request resources for web page display.
+            <p><strong> 10: How can you pass a users information from a client to the web server? </strong> Query strings allow for passing information from client to server, they are encoded as key-value pairs and are preceeded with '?' symbol in a URL</p> 
+            <p><strong> 11: What is the function of Hypertext Transfer Protocol ?</strong> HTTP is a protocol which allows for the communication between a client and a web server with the help of TCP to faciliate transmission control. HTTP has several different types of requests which specifiy what will happen with the content, for instance a GET request from client to server specifies that the client wants to connect to the server and get the .html resources and load the webpage.   </p>
+            <p> <strong>12: Describe how a single web page is displayed on a web browser ? </strong> A web page is displayed by the client sending a GET request to the web server, the web server sends the appropriate file.html to the client. If the web page has styling and pictures the client will send more GET requests to retrieve these resources and show the web page in its entirety. Each part of the web page is sent individually; due to advancements in internet technology this process may not be seen and it will appear as the entire web page loaded in its entirety.          </p>
+        
+        
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="Examples" id="Examples">
+        <div class="Examples" style="text-decoration: underline; text-align: center;">
+            <h2>Examples</h2>
+        </div>
+
+        <div style="text-align:left">
+            <p> <strong>13: Give an example of Uniform Resource Locator ? Specify all components of an URL</strong> An
+                example would be https://www.tradingview.com/chart/?symbol=KUCOIN%3ALUNCUSDT , where https represents
+                the protocol, www.tradingview.com represents the domain, /chart/ is the path, and
+                ?symbol=KUCOIN%3ALUNCUSDT represents the query string. </p>
+            <p> <strong>14: Give some examples of generic top-level domains (gTLD) ? </strong> An example of a generic
+                top level domain would be .com , .org , .net </p>
+            <p> <strong>15: Give some examples of country code top-level domains (ccTLD) ? </strong> An example of a
+                country code top level domain would be .ca (Canada), .us(United States), .uk (United Kingdom) </p>
+            <p> <strong>16: Give some examples of HTTP request methods. </strong> An example of an HTTP request method would be a GET request, from a client to a server asking for the html files to view a webpage. Another example would be a POST request, coming from a client to a server requesting to upload resources to the web site.    </p>
+            
+        </div>
+    </section>
+</body>
+
+
+
+</html>

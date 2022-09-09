@@ -1,0 +1,176 @@
+/* Custom Properties */
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    --fw-reg: 40;
+    --fw-bold: 90;
+    
+    --clr-light:   #9cedfc;
+    --clr-dark: #000000;
+    --clr-accent: #46538b;
+    
+   
+    --fs-h1: rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1.20rem;
+    
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.2rem;
+    }
+}
+
+/* General styles */
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
+ 
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+.intro {
+    position: flex;
+    
+}
+
+.intro__img {
+    box-shadow: var(--bs);
+     width:90%;
+     height:80%;
+      max-width: 100vw;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+  
+}
+
+.section__subtitle--intro {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--ff-secondary);
+}   
+.section__subtitle--intro {
+   
+    text-align: center;
+    position: flex;
+    font-family: var(--ff-secondary);
+    
+    width: calc(100% + 1.5em);
+}
+
+
+.Definitions {
+    background-color: var(--clr-dark);
+    background-blend-mode: multiply; 
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.section__title--.Defintions::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+
+}
+
+
+.Definitions {
+    margin-bottom: 4em;
+    padding-left: 15px;
+}
+
+.Definitions {
+    max-width: 100vw;
+    margin-left: auto
+   
+}
+
+
+.Definitions {
+    background-color: var(--clr-dark);
+  
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+    margin-left:20px;
+    font-size: larger;
+    margin:20px;
+    padding:15px;
+   
+    
+}
+
+/* Understanding Section */  
+.section__title--.Understanding::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+
+}
+
+
+.Understanding {
+    color: black;
+    text-align: center;
+    padding-left: 15px;
+    margin-left:20px;
+    font-size: larger;
+    margin:15px;
+    padding:15px;
+   
+
+
+}
+
+.section__title--.Defintions::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0;
+    background: var(--clr-light);
+    
+}
+
+/** example section **/ 
+.Examples {
+    background-color: var(--clr-dark);
+  
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+    margin-left:20px;
+    font-size: larger;
+    margin:15px;
+    padding:15px;
+   
+
+}
